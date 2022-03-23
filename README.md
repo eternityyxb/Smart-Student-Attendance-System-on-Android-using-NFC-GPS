@@ -4,7 +4,7 @@ Two modules have been implemented: Lecturer and Student
 
 ## Tools
 - Android Studio
-- Firebase
+- Firebase Authentication and Firestore
 - NFC Chips
 
 ## Demo Video
