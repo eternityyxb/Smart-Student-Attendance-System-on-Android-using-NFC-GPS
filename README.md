@@ -8,7 +8,7 @@ Two modules have been implemented: Lecturer module and Student module
 - Firebase Authentication and Firestore
 - NFC Chips
 - Java, XML
-- Google Services API
+- Google Services API - NFC, GPS, Google Drive
 - MS Excel
 
 ## Demo Video
