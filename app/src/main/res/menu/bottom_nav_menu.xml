@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/profileicon"/>
+
+    <item
+        android:id="@+id/Timetable"
+        android:title="Timetable"
+        android:icon="@drawable/timetable"/>
+
+    <item
+        android:id="@+id/Attendance"
+        android:title="Attendance"
+        android:icon="@drawable/checkinicon"/>
+
+</menu>

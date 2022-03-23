@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.AttendanceSystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FypAttendanceApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CovidTracking">
+        <activity android:name=".ExportActivity"></activity>
+        <activity android:name=".AddNewRecord" />
+        <activity android:name=".ManageAttendanceActivity3" />
+        <activity android:name=".ManageAttendanceActivity2" />
+        <activity android:name=".ManageAttendanceActivity" />
+        <activity android:name=".AttendanceResult" />
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".readnfc" />
+        <activity android:name=".TakeAttendance" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".SignUpPg" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.AttendanceSystem.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

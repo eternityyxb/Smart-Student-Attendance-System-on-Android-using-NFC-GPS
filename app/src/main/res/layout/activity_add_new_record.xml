@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewRecord">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/Skin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="42dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@color/Skin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/headertext"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:text="Add Attendance"
+        android:textColor="@color/Browning"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance Record: "
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Browning"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColor="@color/Browning"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:gravity="center_horizontal"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/Browning"
+        android:textSize="15dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/date"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColor="@color/Browning"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:gravity="center_horizontal"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/Browning"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/date"
+        app:layout_constraintTop_toBottomOf="@+id/name1"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColor="@color/Browning"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        android:gravity="center_horizontal"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/Browning"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@+id/date1"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColor="@color/Browning"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:gravity="center_horizontal"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/location1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Browning"
+        android:textSize="15dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/location"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColor="@color/Browning"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        android:gravity="center_horizontal"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/status1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Browning"
+        android:textSize="15dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/status"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColor="@color/Browning"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        android:gravity="center_horizontal"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/notes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Browning"
+        android:textSize="15dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/notes"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/inputnote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Comments / Notes"
+        android:textColorHint="@color/Gray"
+        android:layout_marginBottom="60dp"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputdate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/back"/>
+
+    <EditText
+        android:id="@+id/inputdate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Date (Day-Month-Year)"
+        android:textColorHint="@color/Gray"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/inputnote"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/Browning"
+        android:background="@drawable/button_border"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
