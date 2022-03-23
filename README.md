@@ -10,5 +10,3 @@ Two modules have been implemented: Lecturer and Student
 ## Demo Video
 https://youtu.be/k0fwwDNWP8s
 
-## Firestore Example
-![image](https://user-images.githubusercontent.com/96673376/159655741-8495283f-de83-4986-9f50-47f13509e731.png)
